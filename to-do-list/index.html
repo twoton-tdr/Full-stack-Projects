@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="to-do-list">
@@ -12,28 +13,28 @@
             <input type="text" id="add-list" placeholder="Add list">
             <button id="add-btn">Add</button>
         </span>
-        <ul class="list" style="list-style: circle;">
+        <ul class="list" >
+            <div class="list-item">
             <li>
-                <span class="text">Testing lorem1</span>
-                <span>
+                <span class="text">Testing</span>
+                
+            </li>
+            <span class="buttons-in-list">
+                <button class="Done">Done</button>
+                <button class="Remove">Remove</button>
+            </span>
+            </div>
+            
+            <div class="list-item">
+                <li>
+                    <span class="text">Testing lorem</span>
+                    
+                </li>
+                <span class="buttons-in-list">
                     <button class="Done">Done</button>
                     <button class="Remove">Remove</button>
                 </span>
-            </li>
-            <li>
-                <span class="text">Testing lorem1</span>
-                <span>
-                    <button class="Done">Done</button>
-                    <button class="Remove">Remove</button>
-                </span>
-            </li>
-            <li>
-                <span class="text">Testing lorem1</span>
-                <span>
-                    <button class="Done">Done</button>
-                    <button class="Remove">Remove</button>
-                </span>
-            </li>
+                </div>
         </ul>
     </div>
 </body>

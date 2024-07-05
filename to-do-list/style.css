@@ -1,4 +1,74 @@
 :root{
     --bg-color:white;
-    --card-color:#faf9f8;
+    --card-color:#faf8f6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.to-do-list{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1{
+    margin-top: 10px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+.input-item{
+    margin-bottom: 10px;
+}
+.input-item input{
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid  rgb(185, 183, 181);
+    text-align: center;
+    font-family: tahoma;
+}
+.input-item button{
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(185, 183, 181);
+    font-family: tahoma;
+    font-weight: 600;
+    cursor: pointer;
+}
+ul.list{
+    width: 400px;
+    padding: 20px;
+}
+.list li{
+    font-family: tahoma;
+    font-weight: 600;
+}
+
+.list-item{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons-in-list button{
+    width: 60px;
+    height: 20px;
+    border: 1px solid rgb(185, 183, 181);
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
 }

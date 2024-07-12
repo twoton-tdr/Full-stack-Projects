@@ -2,9 +2,25 @@ const inputbox = document.querySelector("#add-list");
 const addBtn = document.querySelector("#add-btn");
 const ul = document.querySelector(".list");
 
+
+
+inputbox.addEventListener('keydown',(e)=>{
+    if(e.keyCode === 13){
+        getInput() // returns enter keydown event
+    }
+    else{
+        return;
+    }
+});
+
+
+
 function getInput(){
     let inputValue = inputbox.value;
-    addList(inputValue);   
+    if(inputValue !== ''){  //using if clause here to avoid entering blank tasks
+    addList(inputValue);
+    inputbox.value = "";  
+    }   
 };
 
 
@@ -42,12 +58,13 @@ function addList(inputValue){
     })
 
     doneBtn.addEventListener('click',strikethrough)
-    
+
     function strikethrough(){
+        //sets the style of to-do text to strike through 
         if(spanText.style.textDecoration==="line-through"){
             spanText.style.textDecoration='none';
             doneBtn.textContent='Done';
-            //checks if decoration is strike through then change it on keypress to none
+            
         }
         else{
             spanText.style.textDecoration='line-through';
@@ -55,5 +72,7 @@ function addList(inputValue){
             
         }
     }
+    inputbox.focus();
 }
+
 

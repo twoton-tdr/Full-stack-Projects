@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Rock-Paper-Scissor</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header><h1>Rock Paper Scissor</h1></header>
+        <div class="rounds"><h2>Round: <p id="round-number"></p></h2></div>
+        
+        <div class="game-display">
+            
+            <div class="selection">
+                <div class="player-selection">
+                    <p>Player: <span id="player"></span></p>
+                    <div id="player-choice"></div>
+                </div>
+                <div class="computer-selection">
+                    <p>Computer: <span id="computer"></span></p>
+                    <div id="computer-choice"></div>
+                </div>
+            </div>
+            <div class="choose-selection">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissor">Scissor</button>
+            </div>
+            <!-- <div class="round-initialisation">
+                <button id="start">Start</button>
+
+            </div> -->
+        </div>
+        <dialog id="modal"><span id="message"></span></dialog>
+        
+    </body>
+</html>
